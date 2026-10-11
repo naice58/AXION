@@ -1,0 +1,32 @@
+AXION NUTRITION — SITE V2
+
+ARQUIVOS
+- index.html: conteúdo e estrutura
+- style.css: visual dark/fitness responsivo
+- script.js: menu mobile, aviso do checkout e janelas de textos legais
+- assets/: pasta reservada para capa definitiva, logo e imagens
+
+COMO TESTAR NO ANDROID
+1. Baixe o ZIP e extraia a pasta.
+2. Abra index.html no navegador para uma conferência visual inicial.
+3. Para testar melhor CSS/JavaScript, abra a pasta em um servidor local de páginas HTML ou use uma hospedagem de preview.
+4. Confira o menu, os links das seções, as perguntas frequentes e os links de privacidade/termos.
+5. Clique no botão de compra: deve aparecer um aviso de que o checkout está em preparação. Nenhum pagamento está conectado nesta versão.
+
+INTEGRAÇÃO DA GATEWAY
+A gateway não foi integrada porque a documentação está indisponível. Não há endpoints, credenciais nem pagamentos simulados.
+Quando a equipe fornecer documentação, precisamos de: endpoint e autenticação para criar cobrança; identificador da transação e fluxo de checkout; webhook e método de verificação de autenticidade; estados de pagamento; ambiente de testes; e procedimentos de cancelamento/reembolso.
+
+SEGURANÇA
+- Nunca coloque chaves privadas da gateway no HTML ou JavaScript do navegador.
+- A confirmação do pagamento deve ser validada no servidor; não libere o PDF com base apenas em um retorno visual do checkout.
+- Não armazene dados completos de cartão no site.
+- Use HTTPS, verifique webhooks e evite registrar dados sensíveis em logs.
+
+ANTES DE PUBLICAR
+- Finalize o e-book e substitua a capa ilustrativa pela arte final.
+- Garanta que o conteúdo final corresponda aos tópicos anunciados.
+- Substitua os textos de privacidade/termos por documentos completos e revisados.
+- Troque contato@seudominio.com pelo contato real.
+- Confirme preço, dados do vendedor, atendimento e regras de cancelamento/reembolso.
+- Revise requisitos profissionais e regras de publicidade aplicáveis à venda de conteúdo de nutrição.
