@@ -5,7 +5,13 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const { Pool } = require('pg');
 
-const app = express();
+const app = express();app.get("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+            message: "API Axion Muscle online"
+              });
+              });
+
 const PORT = Number(process.env.PORT || 3000);
 const API_BASE = (process.env.GASPARZINHOPAY_BASE_URL || 'https://gasparzinhopay.com/api/v1').replace(/\/$/, '');
 const API_KEY = process.env.GASPARZINHOPAY_API_KEY || '';
