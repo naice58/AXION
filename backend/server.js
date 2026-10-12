@@ -13,7 +13,11 @@ const app = express();app.get("/", (req, res) => {
               });
 
 const PORT = Number(process.env.PORT || 3000);
-const API_BASE = (process.env.GASPARZINHOPAY_BASE_URL || 'https://gasparzinhopay.com/api/v1').replace(/\/$/, '');
+
+const API_BASE = (
+  process.env.GASPARZINHOPAY_BASE_URL ||
+    'https://gasparzinhopay.com/api/v1'
+    ).replace(/\/+$/, '');
 const API_KEY = process.env.GASPARZINHOPAY_API_KEY || '';
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || '';
 const DATABASE_URL = process.env.DATABASE_URL || '';
